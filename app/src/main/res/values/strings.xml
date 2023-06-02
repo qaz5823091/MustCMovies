@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MustCMovies</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">電影必看清單</string>
+    <string name="second_fragment_label">新增電影</string>
+    <string name="third_fragment_label">電影資訊</string>
+    <string name="fourth_fragment_label">修改電影</string>
+    <string name="input_title_label">電影名稱 :</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="add">新增</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

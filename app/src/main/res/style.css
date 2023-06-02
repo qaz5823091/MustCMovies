@@ -1,0 +1,41 @@
+page {
+    display:block;
+    padding:10px;
+    margin:10px;
+    border-style:solid;
+    border-width:4px;
+    border-color:#000000;
+    }
+
+    pageNumber {
+    display:inline;
+    font-style:italic;
+    border-style:solid;
+    border-width:4px;
+    border-color:#CCCCCC;
+    }
+
+    paragraph {
+    display:block;
+    padding:10px;
+    border:solid;
+    border-width:4px;
+    border-color:#CCCCCC;
+    }
+
+    reference {
+    display:inline;
+    font-style:italic;
+    color:#CC3333;
+    border:solid;
+    border-width:2px;
+    border-color:#CCCCCC;
+    }
+
+    keyword {
+    display:inline;
+    font-weight:bold;
+    color:#990000;
+    border:solid;
+    border-width:2px;
+    border-color:#CCCCCC;

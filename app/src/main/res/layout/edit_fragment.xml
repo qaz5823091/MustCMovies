@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
+    tools:context=".Fragments.EditFragment"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="-9dp">
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="92dp"
+        android:text="完成"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="請填入電影名稱"
+        android:inputType="text"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:background="@drawable/comment_shape"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="留下你對這部電影的短評～"
+        android:inputType="textMultiLine"
+        android:paddingLeft="25sp"
+        android:paddingTop="10sp"
+        android:paddingRight="25sp"
+        android:paddingBottom="10sp"
+        android:textColor="#1B1818"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="126dp"
+        android:layout_height="60dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/input_title_label"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <RatingBar
+        android:id="@+id/editRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+</androidx.constraintlayout.widget.ConstraintLayout>

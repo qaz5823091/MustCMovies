@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.ncyucsie.mustcmovies.Fragments.ListFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/list_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_FourthFragment"
+            app:destination="@id/FourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.ncyucsie.mustcmovies.Fragments.AddFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/add_fragment">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.ncyucsie.mustcmovies.Fragments.ReadFragment"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/read_fragment" >
+        <action
+            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FourthFragment"
+        android:name="com.ncyucsie.mustcmovies.Fragments.EditFragment"
+        android:label="@string/fourth_fragment_label"
+        tools:layout="@layout/edit_fragment" >
+        <action
+            android:id="@+id/action_FourthFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+</navigation>

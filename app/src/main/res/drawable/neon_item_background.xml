@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="50dp" />
+                    <gradient
+                        android:centerX="70%"
+                        android:startColor="@color/transparent"
+                        android:centerColor="@color/transparent"
+                        android:endColor="@color/transparent"
+                        android:type="linear"
+                        />
+                </shape>
+            </item>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp"
+                        />
+                    <gradient
+                        android:angle="90"
+                        android:centerX="10%"
+                        android:centerColor="@color/transparent"
+                        android:startColor="#A6FAF361"
+                        android:endColor="@color/transparent"
+                        android:type="linear"
+                        />
+                    <stroke
+                        android:width="3dp"
+                        android:color="#A6E4DF7A"
+                        />
+                </shape>
+            </item>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp"
+                        />
+
+                    <gradient
+                        android:angle="90"
+                        android:centerX="90%"
+                        android:centerColor="@color/transparent"
+                        android:startColor="@color/transparent"
+                        android:endColor="#B3EFE865"
+                        android:type="linear"
+                        />
+
+                </shape>
+            </item>
+            <!-- the glow for the half circles, possible with radius as well. I liked
+                 android:type="sweep" better because radius tends to fade out.-->
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp"
+                        />
+
+                    <gradient
+                        android:angle="360"
+                        android:centerX="5%"
+                        android:centerY="95%"
+                        android:centerColor="#A6E4DD55"
+                        android:startColor="@color/transparent"
+                        android:endColor="@color/transparent"
+                        android:gradientRadius="360"
+                        android:type="sweep"
+                        />
+
+                </shape>
+            </item>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp"
+                        />
+
+                    <gradient
+                        android:angle="360"
+                        android:centerX="95%"
+                        android:centerY="5%"
+                        android:centerColor="@color/transparent"
+                        android:startColor="#A6E4DD55"
+                        android:endColor="#A6E4DD55"
+                        android:gradientRadius="360"
+                        android:type="sweep"
+                        />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
